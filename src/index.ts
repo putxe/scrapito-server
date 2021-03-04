@@ -1,5 +1,9 @@
-import { handleRequest } from './handler'
+import { handlePost } from './handler';
 
 addEventListener('fetch', (event) => {
-  event.respondWith(handleRequest(event.request))
-})
+  const request = event.request;
+  const { pathname } = new URL(request.url);
+  if (pathname === '/scrape') {
+    event.respondWith(handlePost(event.request));
+  }
+});
