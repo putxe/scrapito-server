@@ -1,7 +1,7 @@
 {
-  "name": "pname",
+  "name": "scrapito-server",
   "version": "1.0.0",
-  "description": "Cloudflare worker TypeScript template",
+  "description": "scrapito server handle requests from scrapito",
   "main": "index.js",
   "scripts": {
     "build": "webpack",
@@ -11,7 +11,7 @@
     "test": "npm run test:clean && npm run transpile && mocha --require source-map-support/register --recursive transpiled/test",
     "transpile": "tsc --project ./test"
   },
-  "author": "author",
+  "author": "poutch",
   "license": "MIT OR Apache-2.0",
   "devDependencies": {
     "@cloudflare/workers-types": "^2.0.0",

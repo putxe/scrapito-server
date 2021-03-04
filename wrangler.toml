@@ -1,6 +1,6 @@
-name = "my-app"
+name = "scrapito-server"
 type = "webpack"
-account_id = ""
+account_id = "f0ec39468bfd02c2d662a148badf7359"
 workers_dev = true
 route = ""
 zone_id = ""
